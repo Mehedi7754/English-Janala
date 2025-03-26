@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English is Easy!! - Learn English Online</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm py-4 px-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="assets/logo.png" alt="Logo" class="h-6 mr-2">
+                <span class="text-lg font-medium">English</span>
+                <div class="w-6 h-4 bg-primary ml-2 flex items-center justify-center">
+                    <span class="text-white text-xs">EN</span>
+                </div>
+                <span class="ml-2 text-gray-600">বাংলা</span>
+            </div>
+            <div class="flex gap-2">
+                <a href="#faq-section" class="border border-primary text-primary rounded px-3 py-1 text-sm flex items-center hover:bg-[#422AD5]">
+                    <img src="assets/fa-circle-question.png" alt="FAQ" class="h-4 mr-1"> FAQ
+                </a>
+                <a href="#learn-section" class="border border-primary text-primary rounded px-3 py-1 text-sm flex items-center hover:bg-[#422AD5]">
+                    <img src="assets/fa-book-open.png" alt="Learn" class="h-4 mr-1"> Learn
+                </a>
+                <button class="border border-indigo-700 text-indigo-700 rounded px-3 py-1 text-sm flex items-center hover:bg-[#422AD5] ">
+                    <img src="assets/fa-arrow-right-from-bracket.png" alt="Logout" class="h-4 mr-1 "> Logout
+                </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 container mx-auto px-6 relative overflow-hidden">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+            <div class="z-10">
+                <h1 class="text-4xl font-bold mb-4">
+                    <span class="text-primary">English</span> is Easy!!
+                </h1>
+                <p class="text-gray-700 mb-8">
+                    আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ
+                </p>
+                <div class="max-w-md">
+                    <div class="mb-4">
+                        <input 
+                            type="text" 
+                            placeholder="Enter Your Name" 
+                            class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary"
+                        >
+                    </div>
+                    <div class="mb-4">
+                        <input 
+                            type="text" 
+                            placeholder=".................." 
+                            class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary"
+                        >
+                    </div>
+                    <button class="bg-[#422AD5] text-white px-6 py-2 rounded font-medium hover:bg-indigo-900 transition">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+            <div class="relative">
+                <!-- Student image with bubbles -->
+                <img src="assets/hero-student.png" alt="Student" class="w-full max-w-md mx-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Vocabulary Section -->
+    <section id="learn-section" class="py-16 container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-10">
+            <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
+        </h2>
+        <div id="level-container" class="flex flex-wrap justify-center gap-4">
+            
+        </div>
+    </section>
+
+    <!-- Lesson Selection Section -->
+    <section id="lesson-section" class="bg-gray-100 py-12 container mx-auto px-6 rounded-lg mb-16">
+        <p class="text-center text-[13.38px] text-gray-600 mb-2">আপনি এখনো কোন Lesson Select করেন ন</p>
+        <h3 class="text-2xl font-medium text-center">একটি Lesson Select করুন।</h3>
+    </section>
+
+    <section class="w-11/12 mx-auto grid grid-cols-3 grid-row-2 gap-5 " id="word-container">
+        
+    </section>
+<!-- fufigi -->
+    
+
+    <!-- video details -->
+    <dialog id="word_details" class="modal">
+        <div class="modal-box">
+          <div id="details-container"></div>
+  
+          <div class="modal-action">
+            <form method="dialog">
+              
+              <button class="bg-[#422AD5] text-white px-6 py-2 rounded font-medium hover:bg-indigo-900 transition">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+
+    <!-- FAQ Section -->
+    <section id="faq-section" class="py-16 container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-10">
+            <span class="text-primary">Frequently</span> Asked Questions
+        </h2>
+        
+        <div class="max-w-3xl mx-auto">
+            <!-- FAQ Item 1 (Open by default) -->
+            
+            <details open class="mb-4 border border-gray-200 rounded-lg overflow-hidden">
+                <summary class="p-4 bg-white cursor-pointer font-medium flex justify-between items-center">
+                    1. the difference between var, let, and const
+                    <span class="text-gray-400">-</span>
+                </summary>
+                <div class="p-4 bg-gray-50 border-t border-gray-200">
+                    <p class="text-gray-700">var is function-scoped and can be redeclared and updated; it may cause unexpected bugs due to hoisting. <br>
+
+                        let and const are block-scoped; let can be updated but not redeclared, while const cannot be updated or redeclared.</p>
+                </div>
+            </details>
+            
+            <!-- FAQ Item 2 -->
+            <details class="mb-4 border border-gray-200 rounded-lg overflow-hidden">
+                <summary class="p-4 bg-white cursor-pointer font-medium flex justify-between items-center">
+                    2. the difference between map(), forEach(), and filter()
+                    <span class="text-gray-400">+</span>
+                </summary>
+                <div class="p-4 bg-gray-50 border-t border-gray-200">
+                    <p class="text-gray-700">map() returns a new array by applying a function to each element. <br>
+
+                        forEach() executes a function on each element but does not return a new array. <br>
+                        
+                        filter() returns a new array containing only elements that meet a condition.</p>
+                </div>
+            </details>
+            
+            <!-- FAQ Item 3 -->
+            <details class="mb-4 border border-gray-200 rounded-lg overflow-hidden">
+                <summary class="p-4 bg-white cursor-pointer font-medium flex justify-between items-center">
+                    3. explain arrow functions and how they are different from regular functions
+                    <span class="text-gray-400">+</span>
+                </summary>
+                <div class="p-4 bg-gray-50 border-t border-gray-200">
+                    <p class="text-gray-700">Arrow functions have a shorter syntax and do not have their own this, inheriting it from the surrounding scope. <br>
+
+                        Regular functions have their own this, can use arguments, and work as constructors, unlike arrow functions.</p>
+                </div>
+            </details>
+            
+            <!-- FAQ Item 4 -->
+            <details class="mb-4 border border-gray-200 rounded-lg overflow-hidden">
+                <summary class="p-4 bg-white cursor-pointer font-medium flex justify-between items-center">
+                    4. how JavaScript Promises work
+                    <span class="text-gray-400">+</span>
+                </summary>
+                <div class="p-4 bg-gray-50 border-t border-gray-200">
+                    <p class="text-gray-700">JavaScript Promises represent asynchronous operations and can be in one of three states: pending, fulfilled, or rejected. <br>
+
+                        They use .then() for success, .catch() for errors, and .finally() for cleanup after completion.</p>
+                </div>
+            </details>
+            
+            <!-- FAQ Item 5 -->
+            <details class="mb-4 border border-gray-200 rounded-lg overflow-hidden">
+                <summary class="p-4 bg-white cursor-pointer font-medium flex justify-between items-center">
+                    5.  how closures work in JavaScript
+                    <span class="text-gray-400">+</span>
+                </summary>
+                <div class="p-4 bg-gray-50 border-t border-gray-200">
+                    <p class="text-gray-700">A closure is a function that remembers the variables from its outer scope even after the outer function has finished executing. <br>
+
+                        It allows data encapsulation and is useful for creating private variables in JavaScript.</p>
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 border-t border-gray-200">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        
+                        <span class="text-lg font-medium">English</span>
+                        <img src="assets/logo.png" alt="Logo" class="h-6 mr-2">
+
+                        <span class="ml-2 text-gray-600">জানালা</span>
+                    </div>
+                    <p class="text-gray-600 mb-1">ইংরেজি শিখুন সহজে</p>
+                    <p class="text-gray-600">Providing ED-Tech Applications since 2025</p>
+                </div>
+                
+                <div></div>
+                
+                <div>
+                    <p class="text-gray-600 mb-4 text-right">FOLLOW US</p>
+                    <div class="flex justify-end gap-4">
+                        <a href="#" class="text-gray-600 hover:text-primary">
+                            <img src="assets/fb-thumb.png" alt="Facebook" class="h-6">
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-primary">
+                            <img src="assets/youtube-thumb.png" alt="YouTube" class="h-6">
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-primary">
+                            <img src="assets/instagram-thumb.png" alt="Instagram" class="h-6">
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-primary">
+                            <img src="assets/github-thumb.png" alt="GitHub" class="h-6">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
