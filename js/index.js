@@ -156,4 +156,3 @@ for(let dat of limitedWords){
 
 
 
-/*{"status":true,"message":"successfully fetched all the categories","categories":[{"category_id":"1001","category":"Music"},{"category_id":"1003","category":"Comedy"},{"category_id":"1005","category":"Drawing"}]} */
